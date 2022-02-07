@@ -1,0 +1,11 @@
+---
+name: AntiExplosions
+version: 1.0.0
+main: NhanAZ\AntiExplosions\Main
+api: 4.0.0
+src-namespace-prefix: NhanAZ\AntiExplosions
+
+website: https://github.com/NhanAZ
+description: Prevent explosions from destroying blocks
+author: NhanAZ
+...
