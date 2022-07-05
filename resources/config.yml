@@ -1,0 +1,8 @@
+---
+# all : Explosions will not destroy blocks in all worlds
+# whitelist : Explosions will not destroy blocks in all of the worlds listed below
+# blacklist : Explosions will not destroy blocks in all worlds not listed below
+Mode: all
+Worlds: []
+# Worlds: ["world1", "world2"]
+...
