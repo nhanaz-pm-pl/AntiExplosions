@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace NhanAZ\AntiExplosions;
 
+use pocketmine\event\entity\EntityPreExplodeEvent;
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
-use pocketmine\event\entity\ExplosionPrimeEvent;
 
 class Main extends PluginBase implements Listener {
 
@@ -15,7 +15,7 @@ class Main extends PluginBase implements Listener {
 		$this->saveDefaultConfig();
 	}
 
-	public function onExplosionPrime(ExplosionPrimeEvent $event) {
+	public function onExplosionPrime(EntityPreExplodeEvent $event) {
 		$worldName = $event->getEntity()->getPosition()->getWorld()->getDisplayName();
 		$worlds = $this->getConfig()->get("Worlds", []);
 		switch ($this->getConfig()->get("Mode", "all")) {
